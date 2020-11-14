@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Work\FPGA Project\Captain\Captain.ncd
+OUTFILE=D:\Work\FPGA Project\Captain\Captain.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\Work\FPGA Project\Captain
+LICENSE=WebPack
+USER_INFO=__0_0_0

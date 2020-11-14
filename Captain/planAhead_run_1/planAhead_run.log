@@ -1,0 +1,70 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/Work/FPGA Project/Captain/pa.fromHdl.tcl}
+# create_project -name Captain -dir "D:/Work/FPGA Project/Captain/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Captain.ucf" [current_fileset -constrset]
+Adding file 'D:/Work/FPGA Project/Captain/Captain.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {BCD_7SEG.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Captain.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Captain $srcset
+# add_files [list {Captain.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Work/FPGA Project/Captain/BCD_7SEG.vhd" into library work
+Parsing VHDL file "D:/Work/FPGA Project/Captain/Captain.vhd" into library work
+Loading clock regions from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xlinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/Work/FPGA Project/Captain/Captain.ucf]
+Finished Parsing UCF File [D:/Work/FPGA Project/Captain/Captain.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 5fc74706
+open_rtl_design: Time (s): elapsed = 00:00:17 . Memory (MB): peak = 618.887 ; gain = 170.910
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports a]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports buzzer]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property package_pin P35 [get_ports buzzer]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+set_property package_pin P83 [get_ports buzzer]
+endgroup
+set_property package_pin "" [get_ports [list  buzzer]]
+save_constraints
+set_property package_pin "" [get_ports [list  buzzer]]
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Nov 13 00:31:31 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead
