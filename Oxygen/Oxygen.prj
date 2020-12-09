@@ -1,0 +1,2 @@
+vhdl work "../Captain/BCD_7SEG.vhd"
+vhdl work "Oxygen.vhd"

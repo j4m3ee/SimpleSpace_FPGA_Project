@@ -1,0 +1,681 @@
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Oxygen/Oxygen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Oxygen.ucf -p xc6slx9-tqg144-3 "Oxygen.ngc" Oxygen.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Oxygen_map.ncd Oxygen.ngd Oxygen.pcf 
+par -w -intstyle ise -ol high -mt off Oxygen_map.ncd Oxygen.ncd Oxygen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Oxygen.twx Oxygen.ncd -o Oxygen.twr Oxygen.pcf -ucf Oxygen.ucf 
+bitgen -intstyle ise -f Oxygen.ut Oxygen.ncd 

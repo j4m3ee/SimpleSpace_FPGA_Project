@@ -1,0 +1,706 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Exam1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Exam1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Exam1"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Exam1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" into library work
+Parsing entity <BCD_7SEG>.
+Parsing architecture <Behavioral> of entity <bcd_7seg>.
+Parsing VHDL file "D:\Work\FPGA Project\SimpleSpace\LabEaxm\Exam1.vhd" into library work
+Parsing entity <Exam1>.
+Parsing architecture <Behavioral> of entity <exam1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Exam1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCD_7SEG> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 46: b0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 47: b1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 48: b2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 49: b3 should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 69. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\LabEaxm\Exam1.vhd" Line 190: seg_clk should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Exam1>.
+    Related source file is "D:\Work\FPGA Project\SimpleSpace\LabEaxm\Exam1.vhd".
+    Found 32-bit register for signal <seg_count>.
+    Found 1-bit register for signal <seg_clk>.
+    Found 4-bit register for signal <number>.
+    Found 4-bit register for signal <common>.
+    Found 32-bit register for signal <common_index>.
+    Found 32-bit register for signal <random_num>.
+    Found 32-bit register for signal <select_num>.
+    Found 1-bit register for signal <buz>.
+    Found 4-bit register for signal <number0>.
+    Found 32-bit register for signal <random_num2>.
+    Found 32-bit register for signal <select_num2>.
+    Found 4-bit register for signal <number1>.
+    Found 32-bit adder for signal <seg_count[31]_GND_5_o_add_1_OUT> created at line 80.
+    Found 32-bit adder for signal <common_index[31]_GND_5_o_add_13_OUT> created at line 140.
+    Found 32-bit adder for signal <random_num[31]_GND_5_o_add_19_OUT> created at line 150.
+    Found 32-bit adder for signal <random_num2[31]_GND_5_o_add_42_OUT> created at line 191.
+    Found 8x4-bit Read Only RAM for signal <_n0136>
+    Found 8x5-bit Read Only RAM for signal <_n0158>
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 210 D-type flip-flop(s).
+Unit <Exam1> synthesized.
+
+Synthesizing Unit <BCD_7SEG>.
+    Related source file is "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd".
+    Found 16x7-bit Read Only RAM for signal <LED_out>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BCD_7SEG> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x7-bit single-port Read Only RAM                    : 1
+ 8x4-bit single-port Read Only RAM                     : 1
+ 8x5-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 4
+# Registers                                            : 11
+ 1-bit register                                        : 1
+ 32-bit register                                       : 6
+ 4-bit register                                        : 3
+ 5-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BCD_7SEG>.
+INFO:Xst:3231 - The small RAM <Mram_LED_out> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(B3,B2,B1,B0)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <LED_out>       |          |
+    -----------------------------------------------------------------------
+Unit <BCD_7SEG> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Exam1>.
+The following registers are absorbed into counter <seg_count>: 1 register on signal <seg_count>.
+The following registers are absorbed into counter <random_num>: 1 register on signal <random_num>.
+The following registers are absorbed into counter <common_index>: 1 register on signal <common_index>.
+The following registers are absorbed into counter <random_num2>: 1 register on signal <random_num2>.
+INFO:Xst:3231 - The small RAM <Mram__n0136> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <select_num2<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram__n0158> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 5-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <select_num<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Exam1> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 8x4-bit single-port distributed Read Only RAM         : 1
+ 8x5-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 82
+ Flip-Flops                                            : 82
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <number_3> (without init value) has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <number1_3> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <number0_3> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Exam1> ...
+WARNING:Xst:1710 - FF/Latch <common_2> (without init value) has a constant value of 1 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <common_3> (without init value) has a constant value of 1 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <common_2> (without init value) has a constant value of 1 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <common_3> (without init value) has a constant value of 1 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_30> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_29> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_28> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_27> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_26> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_25> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_24> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_23> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_22> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_21> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_20> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_19> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_18> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_17> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_16> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_15> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_14> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_13> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_12> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_11> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_10> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_9> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_8> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_7> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_6> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_5> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_4> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_3> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_2> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_1> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_31> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_30> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_29> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_28> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_27> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_26> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_25> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_24> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_23> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_22> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_21> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_20> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_19> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_18> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_17> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <common_index_31> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_3> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_4> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_5> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_6> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_7> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_8> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_9> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_10> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_11> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_12> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_13> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_14> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_15> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <random_num2_16> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_20> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_19> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_18> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_17> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_16> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_15> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_14> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_13> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_12> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_11> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_10> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_21> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_22> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_23> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_24> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_25> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_26> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_27> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_28> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_29> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_30> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_31> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_28> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_27> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_26> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_25> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_24> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_23> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_22> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_21> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_20> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_19> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_18> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_17> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_16> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_15> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_14> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_13> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_12> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_11> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_10> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_9> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_8> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_7> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_6> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_5> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_4> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_3> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_9> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_8> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_7> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_6> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_5> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_4> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <random_num_3> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_31> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_30> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_29> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_28> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_27> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_26> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_29> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_30> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num2_31> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_15> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_16> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_17> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_18> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_19> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_20> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_21> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_22> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_23> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_24> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_count_25> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_16> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_15> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_14> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_13> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_12> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_11> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_10> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_9> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_8> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_7> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_6> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_5> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_4> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_3> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_17> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_18> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_19> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_20> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_21> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_22> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_23> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_24> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_25> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_26> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_27> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_28> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_29> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_30> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <select_num_31> has a constant value of 0 in block <Exam1>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <common_1> in Unit <Exam1> is equivalent to the following FF/Latch, which will be removed : <common_index_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Exam1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Exam1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 96
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 18
+#      LUT2                        : 15
+#      LUT3                        : 13
+#      LUT5                        : 1
+#      LUT6                        : 3
+#      MUXCY                       : 18
+#      VCC                         : 1
+#      XORCY                       : 21
+# FlipFlops/Latches                : 40
+#      FD                          : 21
+#      FDE                         : 13
+#      FDR                         : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              40  out of  11440     0%  
+ Number of Slice LUTs:                   55  out of   5720     0%  
+    Number used as Logic:                55  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     64
+   Number with an unused Flip Flop:      24  out of     64    37%  
+   Number with an unused LUT:             9  out of     64    14%  
+   Number of fully used LUT-FF pairs:    31  out of     64    48%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    102    13%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 26    |
+seg_clk                            | NONE(number_0)         | 14    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.824ns (Maximum Frequency: 261.479MHz)
+   Minimum input arrival time before clock: 2.288ns
+   Maximum output required time after clock: 4.804ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.824ns (frequency: 261.479MHz)
+  Total number of paths / destination ports: 384 / 29
+-------------------------------------------------------------------------
+Delay:               3.824ns (Levels of Logic = 3)
+  Source:            seg_count_11 (FF)
+  Destination:       seg_count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: seg_count_11 to seg_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.961  seg_count_11 (seg_count_11)
+     LUT5:I0->O            2   0.203   0.721  GND_5_o_seg_count[31]_equal_5_o<31>1 (GND_5_o_seg_count[31]_equal_5_o<31>)
+     LUT6:I4->O           15   0.203   0.982  GND_5_o_seg_count[31]_equal_5_o<31>3 (GND_5_o_seg_count[31]_equal_5_o)
+     LUT2:I1->O            1   0.205   0.000  seg_count_0_rstpot (seg_count_0_rstpot)
+     FD:D                      0.102          seg_count_0
+    ----------------------------------------
+    Total                      3.824ns (1.160ns logic, 2.664ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'seg_clk'
+  Clock period: 2.612ns (frequency: 382.922MHz)
+  Total number of paths / destination ports: 29 / 17
+-------------------------------------------------------------------------
+Delay:               2.612ns (Levels of Logic = 1)
+  Source:            random_num2_2 (FF)
+  Destination:       random_num2_0 (FF)
+  Source Clock:      seg_clk rising
+  Destination Clock: seg_clk rising
+
+  Data Path: random_num2_2 to random_num2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.879  random_num2_2 (random_num2_2)
+     LUT3:I0->O            3   0.205   0.650  GND_5_o_random_num2[31]_equal_45_o<31>1 (GND_5_o_random_num2[31]_equal_45_o)
+     FDR:R                     0.430          random_num2_0
+    ----------------------------------------
+    Total                      2.612ns (1.082ns logic, 1.530ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.288ns (Levels of Logic = 1)
+  Source:            button (PAD)
+  Destination:       select_num_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: button to select_num_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  button_IBUF (button_IBUF)
+     FDE:CE                    0.322          select_num_0
+    ----------------------------------------
+    Total                      2.288ns (1.544ns logic, 0.744ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'seg_clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.288ns (Levels of Logic = 1)
+  Source:            button (PAD)
+  Destination:       select_num2_0 (FF)
+  Destination Clock: seg_clk rising
+
+  Data Path: button to select_num2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  button_IBUF (button_IBUF)
+     FDE:CE                    0.322          select_num2_0
+    ----------------------------------------
+    Total                      2.288ns (1.544ns logic, 0.744ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'seg_clk'
+  Total number of paths / destination ports: 23 / 9
+-------------------------------------------------------------------------
+Offset:              4.804ns (Levels of Logic = 2)
+  Source:            number_0 (FF)
+  Destination:       output<6> (PAD)
+  Source Clock:      seg_clk rising
+
+  Data Path: number_0 to output<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.002  number_0 (number_0)
+     LUT3:I0->O            1   0.205   0.579  display/Mram_LED_out61 (output_6_OBUF)
+     OBUF:I->O                 2.571          output_6_OBUF (output<6>)
+    ----------------------------------------
+    Total                      4.804ns (3.223ns logic, 1.581ns route)
+                                       (67.1% logic, 32.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            buz (FF)
+  Destination:       buz (PAD)
+  Source Clock:      clk rising
+
+  Data Path: buz to buz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  buz (buz_OBUF)
+     OBUF:I->O                 2.571          buz_OBUF (buz)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.824|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock seg_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.334|         |         |         |
+seg_clk        |    2.612|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.83 secs
+ 
+--> 
+
+Total memory usage is 4510324 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  176 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

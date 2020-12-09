@@ -44,6 +44,7 @@ port(
 		top_led: out std_logic_vector(7 downto 0);
 		led: out std_logic_vector(7 downto 0);
 		buzzer: out std_logic;
+		o2_output: out std_logic_vector(7 downto 0);
 		
 		--7SEG
 		a,b,c,d,e,f,g: out std_logic;
@@ -84,6 +85,7 @@ constant game: std_logic_vector(3 downto 0) := "0011";
 signal inst_top_led: std_logic_vector(7 downto 0);
 signal inst_led: std_logic_vector(7 downto 0);
 signal inst_buzzer: std_logic;
+signal inst_o2_output: std_logic_vector(7 downto 0);
 
 --Distance
 signal common_index: integer := 0;
@@ -99,19 +101,21 @@ signal segment_light_loop: integer := 0;
 signal segment_light: std_logic_vector(3 downto 0) := "1010";
 
 --Velocity_clk
-signal speed_clk: std_logic := 'Z';
-signal speed: std_logic_vector(4 downto 0);
-signal speed_count10: integer := 0;
-signal speed_count20: integer := 0;
-signal speed_count30: integer := 0;
-signal speed_count40: integer := 0;
-signal speed_count50: integer := 0;
+signal speed_clk: std_logic := '0';
+signal speed: std_logic;
+signal speed_count: integer := 0;
+signal speed_max: integer := 0;
+
 
 
 begin
+--Initialize sysytem output
+o2_output(0) <= switch(0);
+o2_output(7 downto 2) <= "000000";
+
+
 --Clock Divider
 Clock_divider: process(clk,clk_count,new_clk)
-
 begin
 	--1 sec
 	if (rising_edge(clk)) then
@@ -141,30 +145,10 @@ begin
 	
 	--SPEED
 	if (rising_edge(clk)) then
-		speed_count10 <= speed_count10 + 1;
-		speed_count20 <= speed_count20 + 1;
-		speed_count30 <= speed_count30 + 1;
-		speed_count40 <= speed_count40 + 1;
-		speed_count50 <= speed_count50 + 1;
-		if speed_count10 = 1000000 - 1 then
-			speed(0) <= not speed(0);
-			speed_count10 <= 0;
-		end if;
-		if speed_count20 = 500000 - 1 then
-			speed(1) <= not speed(1);
-			speed_count20 <= 0;
-		end if;
-		if speed_count30 = 333333 - 1 then
-			speed(2) <= not speed(2);
-			speed_count30 <= 0;
-		end if;
-		if speed_count40 = 250000 - 1 then
-			speed(3) <= not speed(3);
-			speed_count40 <= 0;
-		end if;
-		if speed_count50 = 200000 - 1 then
-			speed(4) <= not speed(4);
-			speed_count50 <= 0;
+		speed_count <= speed_count + 1;
+		if speed_count >= speed_max then
+			speed_clk <= not speed_clk;
+			speed_count <= 0;
 		end if;
 	end if;
 		
@@ -186,10 +170,7 @@ port map(
 			LED_out(1) => f,
 			LED_out(0) => g
 			);
-display: process(seg_clk)
-begin
-	
-end process;
+
 
 
 --State
@@ -213,7 +194,7 @@ begin
 			--NSL
 				if (switch(0) = '1' and switch(7 downto 1) = "0000000") then
 					state <= ready;
-				else 
+				elsif (switch = "00000000") then
 					state <= initial;
 				end if;
 				
@@ -236,7 +217,7 @@ begin
 				distance3 <= "1000";
 				
 			--NSL
-				if (switch(0) = '0') then
+				if (switch = "00000000") then
 					state <= initial;
 				elsif (switch(1) = '1' ) then	
 					state <= start;
@@ -250,6 +231,7 @@ begin
 				inst_led <= (others => '0');
 				if (rising_edge(new_clk2)) then
 					inst_top_led(led_index) <= '1';
+					inst_led(led_index) <= '1';
 					led_index <= led_index + 1;
 					if (led_index = 7) then
 						led_index <= 0;
@@ -272,10 +254,12 @@ begin
 						common_index <= 0;
 					end if;
 				end if;
+				
+				
 							
 				
 			--NSL
-				if (switch(0) = '0') then
+				if (switch = "00000000") then
 					state <= initial;
 				elsif (inst_top_led = "11111111" and button(0) = '1') then
 					state <= game;
@@ -287,6 +271,11 @@ begin
 			
 			--Game State
 			when game =>
+			
+				--initialize inputs
+				o2_output(1) <= switch(7);
+				
+				
 				--7segment
 				if (rising_edge(seg_clk)) then
 				--select common
@@ -333,7 +322,7 @@ begin
 					end if;
 				end if;
 				--Stop Game
-				if switch(0) = '0' then
+				if switch = "00000000" then
 					state <= initial;
 				end if;
 				
@@ -371,16 +360,18 @@ begin
 				---Acceralation
 				case switch(7 downto 2) is 
 					when "100000" =>
-						speed_clk <= speed(0);
+						speed_max <= 1000000;
 					when "110000" =>
-						speed_clk <= speed(1);
+						speed_max <= 500000;
 					when "111000" =>
-						speed_clk <= speed(2);
+						speed_max <= 333333;
 					when "111100" =>
-						speed_clk <= speed(3);
+						speed_max <= 250000;
 					when "111110" => 
-						speed_clk <= speed(4);
-					when others => null;
+						speed_max <= 200000;
+					when "111111" =>
+						speed_max <= 50000;
+					when others => speed_max <= 10000000;
 				end case;
 				
 						

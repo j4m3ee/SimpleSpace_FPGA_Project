@@ -44,9 +44,19 @@ NET "e" LOC = P32;
 NET "f" LOC = P29;
 NET "g" LOC = P27;
 
-# PlanAhead Generated physical constraints 
 
 NET "common[3]" LOC = P30;
 NET "common[2]" LOC = P33;
 NET "common[1]" LOC = P43;
 NET "common[0]" LOC = P44;
+
+# PlanAhead Generated physical constraints 
+
+NET "o2_output[7]" LOC = P6;
+NET "o2_output[6]" LOC = P8;
+NET "o2_output[5]" LOC = P10;
+NET "o2_output[4]" LOC = P12;
+NET "o2_output[3]" LOC = P15;
+NET "o2_output[2]" LOC = P17;
+NET "o2_output[1]" LOC = P22;
+NET "o2_output[0]" LOC = P24;

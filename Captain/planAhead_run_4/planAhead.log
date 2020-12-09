@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Nov 14 20:01:03 2020
+# Process ID: 12312
+# Log file: D:/Work/FPGA Project/SimpleSpace/Captain/planAhead_run_4/planAhead.log
+# Journal file: D:/Work/FPGA Project/SimpleSpace/Captain/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/Work/FPGA Project/SimpleSpace/Captain/pa.fromHdl.tcl}
+# create_project -name Captain -dir "D:/Work/FPGA Project/SimpleSpace/Captain/planAhead_run_4" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Captain.ucf" [current_fileset -constrset]
+Adding file 'D:/Work/FPGA Project/SimpleSpace/Captain/Captain.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {BCD_7SEG.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Captain.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Captain $srcset
+# add_files [list {Captain.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Xlinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Work/FPGA Project/SimpleSpace/Captain/BCD_7SEG.vhd" into library work
+Parsing VHDL file "D:/Work/FPGA Project/SimpleSpace/Captain/Captain.vhd" into library work
+WARNING: [HDL 9-806] Syntax error near "=". [D:/Work/FPGA Project/SimpleSpace/Captain/Captain.vhd:193]
+Loading clock regions from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xlinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xlinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/Work/FPGA Project/SimpleSpace/Captain/Captain.ucf]
+Finished Parsing UCF File [D:/Work/FPGA Project/SimpleSpace/Captain/Captain.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: a8a35e28
+open_rtl_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 625.461 ; gain = 169.883
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P6 [get_ports {o2_output[7]}]
+endgroup
+startgroup
+set_property package_pin P8 [get_ports {o2_output[6]}]
+endgroup
+startgroup
+set_property package_pin P10 [get_ports {o2_output[5]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {o2_output[4]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {o2_output[3]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {o2_output[2]}]
+endgroup
+startgroup
+set_property package_pin P22 [get_ports {o2_output[1]}]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports {o2_output[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See D:/Work/FPGA Project/SimpleSpace/Captain\planAhead_pid12312.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Nov 14 20:02:28 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

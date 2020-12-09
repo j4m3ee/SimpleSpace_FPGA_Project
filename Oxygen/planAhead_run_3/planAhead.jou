@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Nov 14 20:20:55 2020
+# Process ID: 3080
+# Log file: D:/Work/FPGA Project/SimpleSpace/Oxygen/planAhead_run_3/planAhead.log
+# Journal file: D:/Work/FPGA Project/SimpleSpace/Oxygen/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/Work/FPGA Project/SimpleSpace/Oxygen/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P6 [get_ports {hq_input[7]}]
+endgroup
+startgroup
+set_property package_pin P8 [get_ports {hq_input[6]}]
+endgroup
+startgroup
+set_property package_pin P10 [get_ports {hq_input[5]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {hq_input[4]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {hq_input[3]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {hq_input[2]}]
+endgroup
+startgroup
+set_property package_pin P22 [get_ports {hq_input[1]}]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports {hq_input[0]}]
+endgroup
+save_constraints
