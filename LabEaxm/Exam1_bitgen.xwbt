@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=D:\Work\FPGA Project\SimpleSpace\LabEaxm\Exam1.ncd
-OUTFILE=D:\Work\FPGA Project\SimpleSpace\LabEaxm\Exam1.bit
-FAMILY=Spartan6
-PART=xc6slx9-3tqg144
-WORKINGDIR=D:\Work\FPGA Project\SimpleSpace\LabEaxm
-LICENSE=WebPack
-USER_INFO=__0_0_0
