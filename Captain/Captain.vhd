@@ -44,7 +44,11 @@ port(
 		top_led: out std_logic_vector(7 downto 0);
 		led: out std_logic_vector(7 downto 0);
 		buzzer: out std_logic;
-		o2_output: out std_logic_vector(7 downto 0);
+		
+		--System
+		o2_output: inout std_logic_vector(7 downto 0);
+		engine_output: inout std_logic_vector(7 downto 0);
+		energy_output: inout std_logic_vector(7 downto 0);
 		
 		--7SEG
 		a,b,c,d,e,f,g: out std_logic;
@@ -75,8 +79,8 @@ signal seg_clk: std_logic;
 --State
 signal state: std_logic_vector(3 downto 0) := "0000";
 constant initial: std_logic_vector(3 downto 0) := "0000";
-constant ready: std_logic_vector(3 downto 0) := "0001";
-constant start: std_logic_vector(3 downto 0) := "0010";
+constant ship_off: std_logic_vector(3 downto 0) := "0001";
+constant ready: std_logic_vector(3 downto 0) := "0010";
 constant game: std_logic_vector(3 downto 0) := "0011";
 
 --Input
@@ -99,6 +103,7 @@ signal distance3: std_logic_vector(3 downto 0);
 signal led_index: integer := 0;
 signal segment_light_loop: integer := 0;
 signal segment_light: std_logic_vector(3 downto 0) := "1010";
+signal display_select: std_logic;
 
 --Velocity_clk
 signal speed_clk: std_logic := '0';
@@ -107,11 +112,27 @@ signal speed_count: integer := 0;
 signal speed_max: integer := 0;
 
 
+--Time 
+signal time0 :std_logic_vector(3 downto 0) := "0000";
+signal time1 :std_logic_vector(3 downto 0) := "0000";
+signal time2 :std_logic_vector(3 downto 0) := "0111";
+
 
 begin
 --Initialize sysytem output
-o2_output(0) <= switch(0);
-o2_output(7 downto 2) <= "000000";
+
+--Inform that game has started
+	--Oxygen
+	o2_output(0) <= switch(0);
+	
+	--Engine
+	engine_output(0) <= switch(0);
+	
+	--Energy
+	energy_output(0) <= switch(0);
+	
+
+
 
 
 --Clock Divider
@@ -182,152 +203,208 @@ begin
 		
 		--Initial State
 			when initial =>
-			--7segment
+			
+			--7SEGMENT Setup
 				common <= (others => '1');
-			--OFL
+				
+				
+			--CS
+				--Setup Signal
 				led_index <= 0;
 				inst_led <= (others => '0');
 				inst_top_led(7 downto 1) <= "ZZZZZZZ";
+				
+				--Operation
 				if (rising_edge(new_clk)) then
 					inst_top_led(0) <= not inst_top_led(0);
 				end if;
-			--NSL
+				
+				
+			--NS
+				--Start Game
 				if (switch(0) = '1' and switch(7 downto 1) = "0000000") then
-					state <= ready;
+					state <= ship_off;
+					
+				--
 				elsif (switch = "00000000") then
 					state <= initial;
 				end if;
 				
 				
 				
-			--Ready State
-			when ready =>
-			--OFL
+		--Ship Off State
+			when ship_off =>
+			--CS
+				--Setup Signal
 				led_index <= 0;
 				common_index <= 0;
 				common <= (others => '1');
 				inst_led <= (others => '0');
 				inst_top_led(7 downto 1) <= "0000000";
 				inst_top_led(0) <= '1';
+				o2_output(2) <= '0';
+				engine_output(2) <= '0';
+				energy_output(2) <= '0';
 				
 				--Distance Setting
-				distance0 <= "0000";
-				distance1 <= "0000";
-				distance2 <= "0000";
-				distance3 <= "1000";
+				distance0 <= "1000";
+				distance1 <= "0010";
+				distance2 <= "0101";
+				distance3 <= "0111";
 				
-			--NSL
+				--Time Setting
+				time0 <= "0000";
+				time1 <= "0011";
+				time2 <= "0000";
+				
+			--NS
+				--Stop Game
 				if (switch = "00000000") then
 					state <= initial;
+					
+				--Start Ship
 				elsif (switch(1) = '1' ) then	
-					state <= start;
+					state <= ready;
 				end if;
 				
 				
 				
-			--Start State
-			when start =>
-			--OFL
-				inst_led <= (others => '0');
-				if (rising_edge(new_clk2)) then
-					inst_top_led(led_index) <= '1';
-					inst_led(led_index) <= '1';
-					led_index <= led_index + 1;
-					if (led_index = 7) then
-						led_index <= 0;
+		--Ready State
+			when ready =>
+			--CS
+				--Decoration
+					inst_led <= (others => '0');
+					if (rising_edge(new_clk2)) then
+						inst_top_led(led_index) <= '1';
+						inst_led(led_index) <= '1';
+						led_index <= led_index + 1;
+						if (led_index = 7) then
+							led_index <= 0;
+						end if;
 					end if;
-				end if;
+					inst_top_led(7 downto 5) <= switch(7 downto 5);
+					
+					--7segment light loop
+						distance <= segment_light;
+						common(3 downto 1) <=  not switch(7 downto 5);
+						common(0) <= '0';
+						if(rising_edge(new_clk2)) then
+							segment_light <= segment_light + 1;
+							if segment_light = "1100" then
+								segment_light <= "1010";
+							end if;
+						end if;
+					
+					
 				
-				--7segment light loop
-				distance <= segment_light;
-				if(rising_edge(new_clk2)) then
-					segment_light <= segment_light + 1;
-					if segment_light = "1100" then
-						segment_light <= "1010";
-					end if;
-				end if;
-			
-				if (rising_edge(new_clk)) then	
-					common(common_index) <= '0';
-					common_index <= common_index + 1;
-					if common_index = 3 then
-						common_index <= 0;
-					end if;
-				end if;
-				
+				--Setup System
+					--Initialize System 
+						--Oxygen
+							o2_output(1) <= switch(7);
+							
+						--Engine
+							engine_output(1) <= switch(5);
+							
+						--Energy
+							energy_output(1) <= switch(6);
+							
+						--Start Travel
+						if (switch(7 downto 5) = "111") then
+								o2_output(2) <= button(0);
+								engine_output(2) <= button(0);
+								energy_output(2) <= button(0);
+							end if;
+							
+							
+					
+					
+					
 				
 							
 				
-			--NSL
+			--NS
+				--Stop Game
 				if (switch = "00000000") then
 					state <= initial;
-				elsif (inst_top_led = "11111111" and button(0) = '1') then
+					
+				--Start Travel
+				elsif (inst_top_led = "11111111" and button(0) = '1' and switch(7 downto 5) = "111") then
 					state <= game;
+					
+				--Stop Ship
 				elsif (switch(1) = '0') then
-					state <= ready;
+					state <= ship_off;
 				end if;
 			
 			
 			
-			--Game State
+		--Game State
 			when game =>
-			
-				--initialize inputs
-				o2_output(1) <= switch(7);
-				
-				
+				--CS				
 				--7segment
-				if (rising_edge(seg_clk)) then
-				--select common
-					case common_index is
-						when 0 =>
-							distance <= distance0;
-							common(0) <= '0';
-							common(1) <= '1';
-							common(2) <= '1';
-							common(3) <= '1';
-						when 1 =>
-							distance <= distance1;
-							common(0) <= '1';
-							common(1) <= '0';
-							common(2) <= '1';
-							common(3) <= '1';
-						when 2 =>
-							distance <= distance2;
-							common(0) <= '1';
-							common(1) <= '1';
-							common(2) <= '0';
-							common(3) <= '1';
-						when 3 =>
-							distance <= distance3;
-							common(0) <= '1';
-							common(1) <= '1';
-							common(2) <= '1';
-							common(3) <= '0';
-						when others => null;
-					end case;
-					common_index <= common_index + 1;
-					if common_index = 3 then
-						common_index <= 0;
+					if (rising_edge(seg_clk)) then
+					--select common
+						case common_index is
+							when 0 =>
+								if(display_select = '0') then
+									distance <= distance0;
+								elsif(display_select = '1') then
+									distance <= time0;
+								end if;
+								
+								common(0) <= '0';
+								common(1) <= '1';
+								common(2) <= '1';
+								common(3) <= '1';
+							when 1 =>
+								if(display_select = '0') then
+									distance <= distance1;
+								elsif(display_select = '1') then
+									distance <= time1;
+								end if;
+								
+								common(0) <= '1';
+								common(1) <= '0';
+								common(2) <= '1';
+								common(3) <= '1';
+							when 2 =>
+								if(display_select = '0') then
+									distance <= distance2;
+								elsif(display_select = '1') then
+									distance <= time2;
+								end if;
+								
+								common(0) <= '1';
+								common(1) <= '1';
+								common(2) <= '0';
+								common(3) <= '1';
+							when 3 =>
+								if(display_select = '0') then
+									distance <= distance3;
+								elsif(display_select = '1') then
+									distance <= "0000";
+								end if;
+								common(0) <= '1';
+								common(1) <= '1';
+								common(2) <= '1';
+								common(3) <= '0';
+							when others => null;
+						end case;
+						common_index <= common_index + 1;
+						if common_index = 3 then
+							common_index <= 0;
+						end if;
 					end if;
-				end if;
-				
-				--top led
-				inst_top_led <= switch;
+					
+				--Top LED Setup
+				inst_top_led(7 downto 5) <= switch(7 downto 5);
 				inst_led <= (others => '0');
-				--Emergency shutdown
-				if (switch(1) = '0') then
-					if (rising_edge(new_clk)) then
-						inst_led <= not inst_led;
-					end if;
-				end if;
-				--Stop Game
-				if switch = "00000000" then
-					state <= initial;
-				end if;
+				inst_top_led(1 downto 0) <= switch(1 downto 0);
+				inst_top_led(4 downto 2) <= (others => 'Z');
+					
 				
 				--Distance Subtraction
-				if (rising_edge(speed_clk) and switch(1) = '1') then
+				if (rising_edge(speed_clk)) then
 					distance0 <= distance0 - '1';
 					if (distance0 = "0000") then
 						distance0 <= "1001";
@@ -355,27 +432,71 @@ begin
 						distance3 <= "1001";
 					end if;
 				end if;
-				---
+				
 				
 				---Acceralation
-				case switch(7 downto 2) is 
-					when "100000" =>
+				case engine_output(7 downto 4) is 
+					when "1000" =>
 						speed_max <= 1000000;
-					when "110000" =>
+					when "1100" =>
 						speed_max <= 500000;
-					when "111000" =>
+					when "1110" =>
 						speed_max <= 333333;
-					when "111100" =>
+					when "1111" =>
 						speed_max <= 250000;
-					when "111110" => 
-						speed_max <= 200000;
-					when "111111" =>
-						speed_max <= 50000;
 					when others => speed_max <= 10000000;
 				end case;
 				
+				
+				--- Time Left
+				if(rising_edge(new_clk) and not(time0 = "0000" and time1 = "0000" and time2 = "0000")) then
+					time0 <= time0 - '1';
+					if(time0 = "0000") then
+						time0 <= "1001";
+						time1 <= time1 - '1';
+					end if;
+					if(time1 = "0000") then
+						if not(time2 = "0000" ) then
+							time1 <= "0101";
+							time2 <= time2 - '1';
+						end if;
+					end if;
+				end if;
+						
+				---Display Select
+					display_select <= switch(2);		
+				
+				
+			--System Control
+				o2_output(1) <= switch(7);
+				engine_output(1) <= switch(5);
+				energy_output(1) <= switch(6);
+				
+				--Engine Part
+					--engine_output(3) <= switch(4);
+				
+				--Test
+					
+			--NS
+				--Stop Game
+				if switch(0) = '0' and switch(1) = '0' then
+					state <= initial;
+				end if;
+				
+				--Emergency shutdown
+				if (switch(1) = '0') then
+					if (rising_edge(new_clk)) then
+						inst_led <= not inst_led;
+					end if;
+					o2_output(1) <= '0';
+					engine_output(1) <= '0';
+					energy_output(1) <= '0';
+				end if;
+
+				
 						
 			when others => null;
+			
 		end case;
 	end if;
 end process;

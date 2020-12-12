@@ -107,7 +107,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607498409" xil_pn:in_ck="-2850974496533819214" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5639064319178476100" xil_pn:start_ts="1607498394">
+    <transform xil_pn:end_ts="1607708248" xil_pn:in_ck="-2850974496533819214" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5639064319178476100" xil_pn:start_ts="1607708237">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -125,22 +125,26 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1605360123" xil_pn:in_ck="3840570239654118" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6733319459146440782" xil_pn:start_ts="1605360122">
+    <transform xil_pn:end_ts="1607604356" xil_pn:in_ck="3840570239654118" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6733319459146440782" xil_pn:start_ts="1607604356">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607498417" xil_pn:in_ck="5030112095962930310" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3472173740418663254" xil_pn:start_ts="1607498409">
+    <transform xil_pn:end_ts="1607708254" xil_pn:in_ck="5030112095962930310" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3472173740418663254" xil_pn:start_ts="1607708248">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Oxygen.bld"/>
       <outfile xil_pn:name="Oxygen.ngd"/>
       <outfile xil_pn:name="Oxygen_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1607498434" xil_pn:in_ck="5031643674948194759" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1607498417">
+    <transform xil_pn:end_ts="1607708264" xil_pn:in_ck="5031643674948194759" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1607708254">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Oxygen.pcf"/>
       <outfile xil_pn:name="Oxygen_map.map"/>
       <outfile xil_pn:name="Oxygen_map.mrp"/>
@@ -151,7 +155,7 @@
       <outfile xil_pn:name="Oxygen_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1607498447" xil_pn:in_ck="2894116893043418784" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1607498434">
+    <transform xil_pn:end_ts="1607708278" xil_pn:in_ck="2894116893043418784" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1607708264">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -166,7 +170,7 @@
       <outfile xil_pn:name="Oxygen_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1607498459" xil_pn:in_ck="3840570239646493" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1607498447">
+    <transform xil_pn:end_ts="1607708287" xil_pn:in_ck="3840570239646493" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1607708278">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Oxygen.ut"/>
@@ -184,7 +188,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1607498447" xil_pn:in_ck="4829475248893287491" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1607498442">
+    <transform xil_pn:end_ts="1607708278" xil_pn:in_ck="4829475248893287491" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1607708273">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Oxygen.twr"/>

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Nov 16 22:31:14 2020
+// Written by: Map P.20131013 on Sat Dec 12 16:11:02 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,6 +11,14 @@ COMP "e" LOCATE = SITE "P32" LEVEL 1;
 COMP "f" LOCATE = SITE "P29" LEVEL 1;
 COMP "g" LOCATE = SITE "P27" LEVEL 1;
 COMP "clk" LOCATE = SITE "P123" LEVEL 1;
+COMP "energy_output<0>" LOCATE = SITE "P2" LEVEL 1;
+COMP "energy_output<1>" LOCATE = SITE "P143" LEVEL 1;
+COMP "energy_output<2>" LOCATE = SITE "P141" LEVEL 1;
+COMP "energy_output<3>" LOCATE = SITE "P139" LEVEL 1;
+COMP "energy_output<4>" LOCATE = SITE "P137" LEVEL 1;
+COMP "energy_output<5>" LOCATE = SITE "P133" LEVEL 1;
+COMP "energy_output<6>" LOCATE = SITE "P131" LEVEL 1;
+COMP "energy_output<7>" LOCATE = SITE "P126" LEVEL 1;
 COMP "common<0>" LOCATE = SITE "P44" LEVEL 1;
 COMP "common<1>" LOCATE = SITE "P43" LEVEL 1;
 COMP "common<2>" LOCATE = SITE "P33" LEVEL 1;
@@ -31,11 +39,18 @@ COMP "top_led<7>" LOCATE = SITE "P84" LEVEL 1;
 COMP "o2_output<0>" LOCATE = SITE "P24" LEVEL 1;
 COMP "o2_output<1>" LOCATE = SITE "P22" LEVEL 1;
 COMP "o2_output<2>" LOCATE = SITE "P17" LEVEL 1;
-COMP "o2_output<3>" LOCATE = SITE "P15" LEVEL 1;
 COMP "o2_output<4>" LOCATE = SITE "P12" LEVEL 1;
 COMP "o2_output<5>" LOCATE = SITE "P10" LEVEL 1;
 COMP "o2_output<6>" LOCATE = SITE "P8" LEVEL 1;
-COMP "o2_output<7>" LOCATE = SITE "P6" LEVEL 1;
+COMP "o2_output<7>" LOCATE = SITE "P15" LEVEL 1;
+COMP "engine_output<0>" LOCATE = SITE "P121" LEVEL 1;
+COMP "engine_output<1>" LOCATE = SITE "P120" LEVEL 1;
+COMP "engine_output<2>" LOCATE = SITE "P119" LEVEL 1;
+COMP "engine_output<3>" LOCATE = SITE "P118" LEVEL 1;
+COMP "engine_output<4>" LOCATE = SITE "P117" LEVEL 1;
+COMP "engine_output<5>" LOCATE = SITE "P116" LEVEL 1;
+COMP "engine_output<6>" LOCATE = SITE "P115" LEVEL 1;
+COMP "engine_output<7>" LOCATE = SITE "P114" LEVEL 1;
 COMP "led<0>" LOCATE = SITE "P82" LEVEL 1;
 COMP "led<1>" LOCATE = SITE "P81" LEVEL 1;
 COMP "led<2>" LOCATE = SITE "P80" LEVEL 1;

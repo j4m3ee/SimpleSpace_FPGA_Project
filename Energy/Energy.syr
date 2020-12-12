@@ -1,0 +1,1280 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Energy.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Energy.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Energy"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Energy
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" into library work
+Parsing entity <BCD_7SEG>.
+Parsing architecture <Behavioral> of entity <bcd_7seg>.
+Parsing VHDL file "D:\Work\FPGA Project\SimpleSpace\Energy\Energy.vhd" into library work
+Parsing entity <Energy>.
+Parsing architecture <Behavioral> of entity <energy>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Energy> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCD_7SEG> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 46: b0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 47: b1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 48: b2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 49: b3 should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd" Line 69. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Energy>.
+    Related source file is "D:\Work\FPGA Project\SimpleSpace\Energy\Energy.vhd".
+WARNING:Xst:647 - Input <top_switch> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <button> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <new_clk1>.
+    Found 32-bit register for signal <seg_clk_count>.
+    Found 1-bit register for signal <seg_clk>.
+    Found 32-bit register for signal <clk_count2>.
+    Found 1-bit register for signal <new_clk2>.
+    Found 32-bit register for signal <clk_count3>.
+    Found 1-bit register for signal <new_clk3>.
+    Found 4-bit register for signal <GND_5_o_dff_36_OUT>.
+    Found 32-bit register for signal <common_index[31]_dff_37_OUT>.
+    Found 8-bit register for signal <inst_led[7]_dff_42_OUT>.
+    Found 32-bit register for signal <led_index[31]_dff_43_OUT>.
+    Found 4-bit register for signal <segment_light[3]_dff_48_OUT>.
+    Found 4-bit register for signal <GND_5_o_dff_61_OUT>.
+    Found 4-bit register for signal <GND_5_o_dff_62_OUT>.
+    Found 32-bit register for signal <common_index[31]_dff_64_OUT>.
+    Found 4-bit register for signal <energy0[3]_dff_82_OUT>.
+    Found 4-bit register for signal <energy1[3]_dff_83_OUT>.
+    Found 4-bit register for signal <energy2[3]_dff_84_OUT>.
+    Found 4-bit register for signal <energy3[3]_dff_85_OUT>.
+    Found 4-bit register for signal <energy0[3]_dff_102_OUT>.
+    Found 4-bit register for signal <energy1[3]_dff_104_OUT>.
+    Found 4-bit register for signal <energy2[3]_dff_106_OUT>.
+    Found 4-bit register for signal <energy3[3]_dff_108_OUT>.
+    Found 4-bit register for signal <energy0[3]_dff_126_OUT>.
+    Found 4-bit register for signal <energy1[3]_dff_128_OUT>.
+    Found 4-bit register for signal <energy2[3]_dff_130_OUT>.
+    Found 4-bit register for signal <energy3[3]_dff_132_OUT>.
+    Found 4-bit register for signal <n0432>.
+    Found 4-bit register for signal <n0433>.
+    Found 4-bit register for signal <n0434>.
+    Found 4-bit register for signal <n0435>.
+    Found 8-bit register for signal <led_index[2]_dff_251_OUT>.
+    Found 4-bit register for signal <energy0[3]_dff_276_OUT>.
+    Found 4-bit register for signal <energy1[3]_dff_279_OUT>.
+    Found 4-bit register for signal <energy2[3]_dff_282_OUT>.
+    Found 4-bit register for signal <energy3[3]_dff_285_OUT>.
+    Found 8-bit register for signal <led>.
+    Found 8-bit register for signal <state[3]_dff_306_OUT>.
+    Found 4-bit register for signal <common>.
+    Found 32-bit register for signal <led_index>.
+    Found 4-bit register for signal <energy0>.
+    Found 4-bit register for signal <energy1>.
+    Found 4-bit register for signal <energy2>.
+    Found 4-bit register for signal <energy3>.
+    Found 32-bit register for signal <common_index>.
+    Found 4-bit register for signal <state>.
+    Found 4-bit register for signal <energy>.
+    Found 1-bit register for signal <segment_clk>.
+    Found 1-bit register for signal <p>.
+    Found 4-bit register for signal <segment_light>.
+    Found 1-bit register for signal <hq_input<7>>.
+    Found 1-bit register for signal <led_index[2]_new_clk2_DFF_54>.
+    Found 1-bit register for signal <state[3]_clk_DFF_55>.
+    Found 1-bit register for signal <led_index[2]_new_clk2_DFF_56>.
+    Found 1-bit register for signal <state[3]_clk_DFF_57>.
+    Found 1-bit register for signal <led_index[2]_new_clk2_DFF_58>.
+    Found 1-bit register for signal <state[3]_clk_DFF_59>.
+    Found 1-bit register for signal <led_index[2]_new_clk2_DFF_60>.
+    Found 1-bit register for signal <state[3]_clk_DFF_61>.
+    Found 1-bit register for signal <led_index[2]_new_clk2_DFF_62>.
+    Found 1-bit register for signal <state[3]_clk_DFF_63>.
+    Found 1-bit register for signal <led_index[2]_new_clk2_DFF_64>.
+    Found 1-bit register for signal <state[3]_clk_DFF_65>.
+    Found 1-bit register for signal <led_index[2]_new_clk2_DFF_66>.
+    Found 1-bit register for signal <state[3]_clk_DFF_67>.
+    Found 1-bit register for signal <led_index[2]_new_clk2_DFF_68>.
+    Found 1-bit register for signal <state[3]_clk_DFF_69>.
+    Found 32-bit register for signal <clk_count1>.
+    Found 1-bit register for signal <_i000278<3>>.
+    Found 1-bit register for signal <_i000278<2>>.
+    Found 1-bit register for signal <_i000278<1>>.
+    Found 1-bit register for signal <_i000278<0>>.
+    Found 1-bit register for signal <_i000281<3>>.
+    Found 1-bit register for signal <_i000281<2>>.
+    Found 1-bit register for signal <_i000281<1>>.
+    Found 1-bit register for signal <_i000281<0>>.
+    Found 1-bit register for signal <_i000284<3>>.
+    Found 1-bit register for signal <_i000284<2>>.
+    Found 1-bit register for signal <_i000284<1>>.
+    Found 1-bit register for signal <_i000284<0>>.
+    Found 1-bit register for signal <_i000287<3>>.
+    Found 1-bit register for signal <_i000287<2>>.
+    Found 1-bit register for signal <_i000287<1>>.
+    Found 1-bit register for signal <_i000287<0>>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <clk_count1[31]_GND_5_o_add_0_OUT> created at line 118.
+    Found 32-bit adder for signal <seg_clk_count[31]_GND_5_o_add_3_OUT> created at line 125.
+    Found 32-bit adder for signal <clk_count2[31]_GND_5_o_add_6_OUT> created at line 133.
+    Found 32-bit adder for signal <clk_count3[31]_GND_5_o_add_9_OUT> created at line 140.
+    Found 32-bit adder for signal <common_index[31]_GND_5_o_add_33_OUT> created at line 247.
+    Found 32-bit adder for signal <led_index[31]_GND_5_o_add_39_OUT> created at line 259.
+    Found 4-bit adder for signal <segment_light[3]_GND_5_o_add_44_OUT> created at line 267.
+    Found 4-bit adder for signal <energy0[3]_GND_5_o_add_66_OUT> created at line 342.
+    Found 4-bit adder for signal <energy1[3]_GND_5_o_add_68_OUT> created at line 345.
+    Found 4-bit adder for signal <energy2[3]_GND_5_o_add_73_OUT> created at line 349.
+    Found 4-bit adder for signal <energy3[3]_GND_5_o_add_79_OUT> created at line 353.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_140_OUT<3:0>> created at line 395.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_142_OUT<3:0>> created at line 398.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_147_OUT<3:0>> created at line 402.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_153_OUT<3:0>> created at line 406.
+    Found 16x1-bit Read Only RAM for signal <state[3]_GND_7_o_Mux_328_o>
+    Found 4x4-bit Read Only RAM for signal <_n0497>
+    Found 4-bit 4-to-1 multiplexer for signal <_n0507> created at line 302.
+    Found 1-bit tristate buffer for signal <inst_top_led<7>> created at line 179
+    Found 1-bit tristate buffer for signal <inst_top_led<6>> created at line 179
+    Found 1-bit tristate buffer for signal <inst_top_led<5>> created at line 179
+    Found 1-bit tristate buffer for signal <inst_top_led<4>> created at line 179
+    Found 1-bit tristate buffer for signal <inst_top_led<3>> created at line 179
+    Found 1-bit tristate buffer for signal <inst_top_led<2>> created at line 179
+    Found 1-bit tristate buffer for signal <inst_top_led<1>> created at line 179
+    Found 1-bit tristate buffer for signal <inst_top_led<0>> created at line 179
+    WARNING:Xst:2404 -  FFs/Latches <_i000308<1:8>> (without init value) have a constant value of 0 in block <Energy>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred 483 D-type flip-flop(s).
+	inferred 104 Multiplexer(s).
+	inferred   8 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <Energy> synthesized.
+
+Synthesizing Unit <BCD_7SEG>.
+    Related source file is "D:\Work\FPGA Project\SimpleSpace\Captain\BCD_7SEG.vhd".
+    Found 16x7-bit Read Only RAM for signal <LED_out>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BCD_7SEG> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x1-bit single-port Read Only RAM                    : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 15
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 4
+# Registers                                            : 83
+ 1-bit register                                        : 39
+ 32-bit register                                       : 9
+ 4-bit register                                        : 31
+ 8-bit register                                        : 4
+# Multiplexers                                         : 104
+ 1-bit 2-to-1 multiplexer                              : 37
+ 32-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 56
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 4
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BCD_7SEG>.
+INFO:Xst:3231 - The small RAM <Mram_LED_out> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(B3,B2,B1,B0)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <LED_out>       |          |
+    -----------------------------------------------------------------------
+Unit <BCD_7SEG> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Energy>.
+The following registers are absorbed into counter <seg_clk_count>: 1 register on signal <seg_clk_count>.
+The following registers are absorbed into counter <clk_count2>: 1 register on signal <clk_count2>.
+The following registers are absorbed into counter <clk_count3>: 1 register on signal <clk_count3>.
+The following registers are absorbed into counter <clk_count1>: 1 register on signal <clk_count1>.
+INFO:Xst:3231 - The small RAM <Mram__n0497> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <common_index<1:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_state[3]_GND_7_o_Mux_328_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("0",state)>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Energy> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x1-bit single-port distributed Read Only RAM        : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 11
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 4
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 355
+ Flip-Flops                                            : 355
+# Multiplexers                                         : 141
+ 1-bit 2-to-1 multiplexer                              : 77
+ 32-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 54
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <_i000306_0> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <led_index[2]_new_clk2_DFF_68> 
+INFO:Xst:2261 - The FF/Latch <_i000306_1> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <led_index[2]_new_clk2_DFF_66> 
+INFO:Xst:2261 - The FF/Latch <_i000306_2> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <led_index[2]_new_clk2_DFF_64> 
+INFO:Xst:2261 - The FF/Latch <_i000306_3> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <led_index[2]_new_clk2_DFF_62> 
+INFO:Xst:2261 - The FF/Latch <_i000306_4> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <led_index[2]_new_clk2_DFF_60> 
+INFO:Xst:2261 - The FF/Latch <_i000306_5> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <led_index[2]_new_clk2_DFF_58> 
+INFO:Xst:2261 - The FF/Latch <_i000306_6> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <led_index[2]_new_clk2_DFF_56> 
+INFO:Xst:2261 - The FF/Latch <_i000306_7> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <led_index[2]_new_clk2_DFF_54> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00
+ 0010  | 01
+ 0011  | 11
+ 0101  | 10
+-------------------
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    _i000284_0 in unit <Energy>
+    _i000284_1 in unit <Energy>
+    _i000284_3 in unit <Energy>
+    _i000281_0 in unit <Energy>
+    _i000284_2 in unit <Energy>
+    _i000281_1 in unit <Energy>
+    _i000281_2 in unit <Energy>
+    _i000281_3 in unit <Energy>
+    _i000287_1 in unit <Energy>
+    _i000287_2 in unit <Energy>
+    _i000287_0 in unit <Energy>
+    _i000287_3 in unit <Energy>
+    _i000278_0 in unit <Energy>
+    _i000278_2 in unit <Energy>
+    _i000278_3 in unit <Energy>
+    _i000278_1 in unit <Energy>
+
+WARNING:Xst:2042 - Unit Energy: 8 internal tristates are replaced by logic (pull-up yes): N17, N18, N19, N20, N21, N22, N23, N24.
+
+Optimizing unit <Energy> ...
+WARNING:Xst:1710 - FF/Latch <inst_top_led_2> (without init value) has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_top_led_3> (without init value) has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_top_led_4> (without init value) has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_top_led_5> (without init value) has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_top_led_6> (without init value) has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <seg_clk_count_16> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_17> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_18> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_19> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_20> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_21> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_22> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_23> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_24> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_25> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_26> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_27> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_28> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_29> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_30> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_31> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count1_24> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count1_25> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count1_26> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count1_27> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count1_28> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count1_29> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count1_30> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count1_31> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_21> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_22> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_23> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_24> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_25> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_26> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_27> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_28> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_29> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_30> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count3_31> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_20> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_21> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_22> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_23> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_24> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_25> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_26> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_27> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_28> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_29> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_30> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count2_31> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg_clk_count_15> has a constant value of 0 in block <Energy>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <clk_count3_0> in Unit <Energy> is equivalent to the following 3 FFs/Latches, which will be removed : <clk_count2_0> <seg_clk_count_0> <clk_count1_0> 
+INFO:Xst:2261 - The FF/Latch <clk_count3_1> in Unit <Energy> is equivalent to the following 2 FFs/Latches, which will be removed : <clk_count2_1> <clk_count1_1> 
+INFO:Xst:2261 - The FF/Latch <clk_count3_2> in Unit <Energy> is equivalent to the following 2 FFs/Latches, which will be removed : <clk_count2_2> <clk_count1_2> 
+INFO:Xst:2261 - The FF/Latch <clk_count3_3> in Unit <Energy> is equivalent to the following 2 FFs/Latches, which will be removed : <clk_count2_3> <clk_count1_3> 
+INFO:Xst:2261 - The FF/Latch <clk_count3_4> in Unit <Energy> is equivalent to the following 2 FFs/Latches, which will be removed : <clk_count2_4> <clk_count1_4> 
+INFO:Xst:2261 - The FF/Latch <clk_count3_5> in Unit <Energy> is equivalent to the following 2 FFs/Latches, which will be removed : <clk_count2_5> <clk_count1_5> 
+INFO:Xst:2261 - The FF/Latch <clk_count3_6> in Unit <Energy> is equivalent to the following FF/Latch, which will be removed : <clk_count1_6> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Energy, actual ratio is 11.
+FlipFlop state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop state_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 428
+ Flip-Flops                                            : 428
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Energy.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 851
+#      GND                         : 1
+#      INV                         : 15
+#      LUT1                        : 138
+#      LUT2                        : 42
+#      LUT3                        : 141
+#      LUT4                        : 78
+#      LUT5                        : 79
+#      LUT6                        : 88
+#      MUXCY                       : 138
+#      VCC                         : 1
+#      XORCY                       : 130
+# FlipFlops/Latches                : 444
+#      FD                          : 249
+#      FDC                         : 16
+#      FDE                         : 111
+#      FDP                         : 16
+#      FDR                         : 34
+#      FDS                         : 2
+#      LDC                         : 16
+# Clock Buffers                    : 5
+#      BUFG                        : 4
+#      BUFGP                       : 1
+# IO Buffers                       : 40
+#      IBUF                        : 11
+#      OBUF                        : 21
+#      OBUFT                       : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             444  out of  11440     3%  
+ Number of Slice LUTs:                  581  out of   5720    10%  
+    Number used as Logic:               581  out of   5720    10%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    645
+   Number with an unused Flip Flop:     201  out of    645    31%  
+   Number with an unused LUT:            64  out of    645     9%  
+   Number of fully used LUT-FF pairs:   380  out of    645    58%  
+   Number of unique control sets:        61
+
+IO Utilization: 
+ Number of IOs:                          59
+ Number of bonded IOBs:                  41  out of    102    40%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                     | Clock buffer(FF name)  | Load  |
+-----------------------------------------------------------------+------------------------+-------+
+clk                                                              | BUFGP                  | 188   |
+new_clk2                                                         | BUFG                   | 116   |
+new_clk1                                                         | NONE(_i000104_0)       | 16    |
+seg_clk                                                          | BUFG                   | 40    |
+new_clk3                                                         | BUFG                   | 32    |
+segment_clk                                                      | BUFG                   | 36    |
+switch[7]_energy0[3]_AND_78_o(switch[7]_energy0[3]_AND_78_o1:O)  | NONE(*)(_i000278_1_LDC)| 1     |
+switch[7]_energy0[3]_AND_74_o(switch[7]_energy0[3]_AND_74_o1:O)  | NONE(*)(_i000278_3_LDC)| 1     |
+switch[7]_energy0[3]_AND_76_o(switch[7]_energy0[3]_AND_76_o1:O)  | NONE(*)(_i000278_2_LDC)| 1     |
+switch[7]_energy0[3]_AND_80_o(switch[7]_energy0[3]_AND_80_o1:O)  | NONE(*)(_i000278_0_LDC)| 1     |
+switch[7]_energy3[3]_AND_98_o(switch[7]_energy3[3]_AND_98_o1:O)  | NONE(*)(_i000287_3_LDC)| 1     |
+switch[7]_energy3[3]_AND_104_o(switch[7]_energy3[3]_AND_104_o1:O)| NONE(*)(_i000287_0_LDC)| 1     |
+switch[7]_energy3[3]_AND_100_o(switch[7]_energy3[3]_AND_100_o1:O)| NONE(*)(_i000287_2_LDC)| 1     |
+switch[7]_energy3[3]_AND_102_o(switch[7]_energy3[3]_AND_102_o1:O)| NONE(*)(_i000287_1_LDC)| 1     |
+switch[7]_energy1[3]_AND_82_o(switch[7]_energy1[3]_AND_82_o1:O)  | NONE(*)(_i000281_3_LDC)| 1     |
+switch[7]_energy1[3]_AND_84_o(switch[7]_energy1[3]_AND_84_o1:O)  | NONE(*)(_i000281_2_LDC)| 1     |
+switch[7]_energy1[3]_AND_86_o(switch[7]_energy1[3]_AND_86_o1:O)  | NONE(*)(_i000281_1_LDC)| 1     |
+switch[7]_energy2[3]_AND_92_o(switch[7]_energy2[3]_AND_92_o1:O)  | NONE(*)(_i000284_2_LDC)| 1     |
+switch[7]_energy1[3]_AND_88_o(switch[7]_energy1[3]_AND_88_o1:O)  | NONE(*)(_i000281_0_LDC)| 1     |
+switch[7]_energy2[3]_AND_90_o(switch[7]_energy2[3]_AND_90_o1:O)  | NONE(*)(_i000284_3_LDC)| 1     |
+switch[7]_energy2[3]_AND_94_o(switch[7]_energy2[3]_AND_94_o1:O)  | NONE(*)(_i000284_1_LDC)| 1     |
+switch[7]_energy2[3]_AND_96_o(switch[7]_energy2[3]_AND_96_o1:O)  | NONE(*)(_i000284_0_LDC)| 1     |
+-----------------------------------------------------------------+------------------------+-------+
+(*) These 16 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.174ns (Maximum Frequency: 239.567MHz)
+   Minimum input arrival time before clock: 5.288ns
+   Maximum output required time after clock: 4.849ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.174ns (frequency: 239.567MHz)
+  Total number of paths / destination ports: 2571 / 242
+-------------------------------------------------------------------------
+Delay:               4.174ns (Levels of Logic = 3)
+  Source:            clk_count3_4 (FF)
+  Destination:       clk_count3_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_count3_4 to clk_count3_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.447   1.079  clk_count3_4 (clk_count3_4)
+     LUT6:I0->O           18   0.203   1.050  GND_5_o_clk_count2[31]_equal_8_o<31>2 (GND_5_o_clk_count2[31]_equal_8_o<31>1)
+     LUT6:I5->O           11   0.205   0.883  GND_5_o_clk_count3[31]_equal_11_o<31>5 (GND_5_o_clk_count3[31]_equal_11_o)
+     LUT2:I1->O            1   0.205   0.000  clk_count3_0_rstpot (clk_count3_0_rstpot)
+     FD:D                      0.102          clk_count3_0
+    ----------------------------------------
+    Total                      4.174ns (1.162ns logic, 3.012ns route)
+                                       (27.8% logic, 72.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 224 / 50
+-------------------------------------------------------------------------
+Offset:              5.288ns (Levels of Logic = 4)
+  Source:            hq_input<5> (PAD)
+  Destination:       energy0_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: hq_input<5> to energy0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.222   1.176  hq_input_5_IBUF (hq_input_5_IBUF)
+     LUT2:I0->O           16   0.203   1.369  Mmux_state[3]_energy0[3]_wide_mux_293_OUT22 (Mmux_state[3]_energy0[3]_wide_mux_293_OUT21)
+     LUT6:I0->O            1   0.203   0.808  Mmux_state[3]_energy0[3]_wide_mux_293_OUT23 (Mmux_state[3]_energy0[3]_wide_mux_293_OUT22)
+     LUT5:I2->O            1   0.205   0.000  Mmux_state[3]_energy0[3]_wide_mux_293_OUT24 (state[3]_energy0[3]_wide_mux_293_OUT<0>)
+     FDE:D                     0.102          energy0_0
+    ----------------------------------------
+    Total                      5.288ns (1.935ns logic, 3.353ns route)
+                                       (36.6% logic, 63.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'new_clk2'
+  Total number of paths / destination ports: 144 / 72
+-------------------------------------------------------------------------
+Offset:              4.348ns (Levels of Logic = 3)
+  Source:            switch<7> (PAD)
+  Destination:       _i000284_1_C_1 (FF)
+  Destination Clock: new_clk2 rising
+
+  Data Path: switch<7> to _i000284_1_C_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.705  switch_7_IBUF (switch_7_IBUF)
+     LUT2:I0->O            4   0.203   0.912  switch[7]_PWR_5_o_equal_201_o<7>1 (switch[7]_PWR_5_o_equal_201_o)
+     LUT6:I3->O            2   0.205   0.000  Mmux_energy2[3]_energy2[3]_mux_235_OUT21 (energy2[3]_energy2[3]_mux_235_OUT<1>)
+     FDC:D                     0.102          _i000284_1_C_1
+    ----------------------------------------
+    Total                      4.348ns (1.732ns logic, 2.616ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy0[3]_AND_78_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000278_1_LDC (LATCH)
+  Destination Clock: switch[7]_energy0[3]_AND_78_o falling
+
+  Data Path: switch<7> to _i000278_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy0[3]_AND_79_o1 (switch[7]_energy0[3]_AND_79_o)
+     LDC:CLR                   0.430          _i000278_1_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy0[3]_AND_74_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000278_3_LDC (LATCH)
+  Destination Clock: switch[7]_energy0[3]_AND_74_o falling
+
+  Data Path: switch<7> to _i000278_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy0[3]_AND_75_o1 (switch[7]_energy0[3]_AND_75_o)
+     LDC:CLR                   0.430          _i000278_3_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy0[3]_AND_76_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000278_2_LDC (LATCH)
+  Destination Clock: switch[7]_energy0[3]_AND_76_o falling
+
+  Data Path: switch<7> to _i000278_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy0[3]_AND_77_o1 (switch[7]_energy0[3]_AND_77_o)
+     LDC:CLR                   0.430          _i000278_2_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy0[3]_AND_80_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000278_0_LDC (LATCH)
+  Destination Clock: switch[7]_energy0[3]_AND_80_o falling
+
+  Data Path: switch<7> to _i000278_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy0[3]_AND_81_o1 (switch[7]_energy0[3]_AND_81_o)
+     LDC:CLR                   0.430          _i000278_0_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy3[3]_AND_98_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000287_3_LDC (LATCH)
+  Destination Clock: switch[7]_energy3[3]_AND_98_o falling
+
+  Data Path: switch<7> to _i000287_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy3[3]_AND_99_o1 (switch[7]_energy3[3]_AND_99_o)
+     LDC:CLR                   0.430          _i000287_3_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy3[3]_AND_104_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000287_0_LDC (LATCH)
+  Destination Clock: switch[7]_energy3[3]_AND_104_o falling
+
+  Data Path: switch<7> to _i000287_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy3[3]_AND_105_o1 (switch[7]_energy3[3]_AND_105_o)
+     LDC:CLR                   0.430          _i000287_0_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy3[3]_AND_100_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000287_2_LDC (LATCH)
+  Destination Clock: switch[7]_energy3[3]_AND_100_o falling
+
+  Data Path: switch<7> to _i000287_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy3[3]_AND_101_o1 (switch[7]_energy3[3]_AND_101_o)
+     LDC:CLR                   0.430          _i000287_2_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy3[3]_AND_102_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000287_1_LDC (LATCH)
+  Destination Clock: switch[7]_energy3[3]_AND_102_o falling
+
+  Data Path: switch<7> to _i000287_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy3[3]_AND_103_o1 (switch[7]_energy3[3]_AND_103_o)
+     LDC:CLR                   0.430          _i000287_1_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy1[3]_AND_82_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000281_3_LDC (LATCH)
+  Destination Clock: switch[7]_energy1[3]_AND_82_o falling
+
+  Data Path: switch<7> to _i000281_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy1[3]_AND_83_o1 (switch[7]_energy1[3]_AND_83_o)
+     LDC:CLR                   0.430          _i000281_3_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy1[3]_AND_84_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000281_2_LDC (LATCH)
+  Destination Clock: switch[7]_energy1[3]_AND_84_o falling
+
+  Data Path: switch<7> to _i000281_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy1[3]_AND_85_o1 (switch[7]_energy1[3]_AND_85_o)
+     LDC:CLR                   0.430          _i000281_2_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy1[3]_AND_86_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000281_1_LDC (LATCH)
+  Destination Clock: switch[7]_energy1[3]_AND_86_o falling
+
+  Data Path: switch<7> to _i000281_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy1[3]_AND_87_o1 (switch[7]_energy1[3]_AND_87_o)
+     LDC:CLR                   0.430          _i000281_1_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy2[3]_AND_92_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000284_2_LDC (LATCH)
+  Destination Clock: switch[7]_energy2[3]_AND_92_o falling
+
+  Data Path: switch<7> to _i000284_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy2[3]_AND_93_o1 (switch[7]_energy2[3]_AND_93_o)
+     LDC:CLR                   0.430          _i000284_2_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy1[3]_AND_88_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000281_0_LDC (LATCH)
+  Destination Clock: switch[7]_energy1[3]_AND_88_o falling
+
+  Data Path: switch<7> to _i000281_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy1[3]_AND_89_o1 (switch[7]_energy1[3]_AND_89_o)
+     LDC:CLR                   0.430          _i000281_0_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy2[3]_AND_90_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000284_3_LDC (LATCH)
+  Destination Clock: switch[7]_energy2[3]_AND_90_o falling
+
+  Data Path: switch<7> to _i000284_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy2[3]_AND_91_o1 (switch[7]_energy2[3]_AND_91_o)
+     LDC:CLR                   0.430          _i000284_3_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy2[3]_AND_94_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000284_1_LDC (LATCH)
+  Destination Clock: switch[7]_energy2[3]_AND_94_o falling
+
+  Data Path: switch<7> to _i000284_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy2[3]_AND_95_o1 (switch[7]_energy2[3]_AND_95_o)
+     LDC:CLR                   0.430          _i000284_1_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch[7]_energy2[3]_AND_96_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.074ns (Levels of Logic = 2)
+  Source:            switch<7> (PAD)
+  Destination:       _i000284_0_LDC (LATCH)
+  Destination Clock: switch[7]_energy2[3]_AND_96_o falling
+
+  Data Path: switch<7> to _i000284_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            58   1.222   1.601  switch_7_IBUF (switch_7_IBUF)
+     LUT3:I2->O            2   0.205   0.616  switch[7]_energy2[3]_AND_97_o1 (switch[7]_energy2[3]_AND_97_o)
+     LDC:CLR                   0.430          _i000284_0_LDC
+    ----------------------------------------
+    Total                      4.074ns (1.857ns logic, 2.217ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 53 / 29
+-------------------------------------------------------------------------
+Offset:              4.849ns (Levels of Logic = 2)
+  Source:            energy_1 (FF)
+  Destination:       a (PAD)
+  Source Clock:      clk rising
+
+  Data Path: energy_1 to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.447   1.050  energy_1 (energy_1)
+     LUT4:I0->O            1   0.203   0.579  DISTANCE_DISPLAY/Mram_LED_out12 (g_OBUF)
+     OBUF:I->O                 2.571          g_OBUF (g)
+    ----------------------------------------
+    Total                      4.849ns (3.221ns logic, 1.628ns route)
+                                       (66.4% logic, 33.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+clk                           |    4.174|         |         |         |
+new_clk1                      |    2.563|         |         |         |
+new_clk2                      |    3.593|         |         |         |
+new_clk3                      |    2.689|         |         |         |
+seg_clk                       |    1.436|         |         |         |
+segment_clk                   |    1.436|         |         |         |
+switch[7]_energy0[3]_AND_74_o |         |    3.770|         |         |
+switch[7]_energy0[3]_AND_76_o |         |    3.770|         |         |
+switch[7]_energy0[3]_AND_78_o |         |    3.770|         |         |
+switch[7]_energy0[3]_AND_80_o |         |    3.770|         |         |
+switch[7]_energy1[3]_AND_82_o |         |    3.770|         |         |
+switch[7]_energy1[3]_AND_84_o |         |    3.770|         |         |
+switch[7]_energy1[3]_AND_86_o |         |    3.770|         |         |
+switch[7]_energy1[3]_AND_88_o |         |    3.770|         |         |
+switch[7]_energy2[3]_AND_90_o |         |    3.770|         |         |
+switch[7]_energy2[3]_AND_92_o |         |    3.753|         |         |
+switch[7]_energy2[3]_AND_94_o |         |    3.770|         |         |
+switch[7]_energy2[3]_AND_96_o |         |    3.753|         |         |
+switch[7]_energy3[3]_AND_100_o|         |    3.770|         |         |
+switch[7]_energy3[3]_AND_102_o|         |    3.770|         |         |
+switch[7]_energy3[3]_AND_104_o|         |    3.770|         |         |
+switch[7]_energy3[3]_AND_98_o |         |    3.770|         |         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock new_clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.154|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock new_clk2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.987|         |         |         |
+new_clk3       |    2.544|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock new_clk3
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.912|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock seg_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.801|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock segment_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.801|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy0[3]_AND_74_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy0[3]_AND_76_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy0[3]_AND_78_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy0[3]_AND_80_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy1[3]_AND_82_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy1[3]_AND_84_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy1[3]_AND_86_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy1[3]_AND_88_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy2[3]_AND_90_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy2[3]_AND_92_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy2[3]_AND_94_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy2[3]_AND_96_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy3[3]_AND_100_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy3[3]_AND_102_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy3[3]_AND_104_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switch[7]_energy3[3]_AND_98_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+new_clk3       |         |         |    2.544|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.41 secs
+ 
+--> 
+
+Total memory usage is 4510324 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   62 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+

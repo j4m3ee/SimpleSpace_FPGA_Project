@@ -65,7 +65,7 @@ case LED_BCD is
     when "1100" => LED_out <= not "0110111"; -- C
     when "1101" => LED_out <= not "1000010"; -- d
     when "1110" => LED_out <= not "0110000"; -- E
-    when "1111" => LED_out <= not "0111000"; -- F
+    when "1111" => LED_out <= not "1111111"; -- F
 	 when others => null;
 	 
 end case;

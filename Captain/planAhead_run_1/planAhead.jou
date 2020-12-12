@@ -1,28 +1,11 @@
 #-----------------------------------------------------------
 # PlanAhead v14.7 (64-bit)
 # Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Fri Nov 13 00:29:33 2020
-# Process ID: 8820
-# Log file: D:/Work/FPGA Project/Captain/planAhead_run_1/planAhead.log
-# Journal file: D:/Work/FPGA Project/Captain/planAhead_run_1/planAhead.jou
+# Start of session at: Thu Dec 10 23:18:38 2020
+# Process ID: 2700
+# Log file: D:/Work/FPGA Project/SimpleSpace/Captain/planAhead_run_1/planAhead.log
+# Journal file: D:/Work/FPGA Project/SimpleSpace/Captain/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
 start_gui
-source {D:/Work/FPGA Project/Captain/pa.fromHdl.tcl}
+source {D:/Work/FPGA Project/SimpleSpace/Captain/pa.fromHdl.tcl}
 update_compile_order -fileset sim_1
-startgroup
-set_property package_pin P41 [get_ports a]
-endgroup
-startgroup
-set_property package_pin P40 [get_ports b]
-endgroup
-startgroup
-set_property package_pin P35 [get_ports buzzer]
-endgroup
-undo
-startgroup
-set_property package_pin P83 [get_ports buzzer]
-endgroup
-set_property package_pin "" [get_ports [list  buzzer]]
-save_constraints
-set_property package_pin "" [get_ports [list  buzzer]]
-save_constraints

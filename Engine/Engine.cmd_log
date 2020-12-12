@@ -1,0 +1,621 @@
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.xst" -ofn "D:/Work/FPGA Project/SimpleSpace/Engine/Engine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Engine.ucf -p xc6slx9-tqg144-3 "Engine.ngc" Engine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Engine_map.ncd Engine.ngd Engine.pcf 
+par -w -intstyle ise -ol high -mt off Engine_map.ncd Engine.ncd Engine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Engine.twx Engine.ncd -o Engine.twr Engine.pcf -ucf Engine.ucf 
+bitgen -intstyle ise -f Engine.ut Engine.ncd 

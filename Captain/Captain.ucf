@@ -50,13 +50,32 @@ NET "common[2]" LOC = P33;
 NET "common[1]" LOC = P43;
 NET "common[0]" LOC = P44;
 
-# PlanAhead Generated physical constraints 
-
-NET "o2_output[7]" LOC = P6;
+NET "o2_output[6]" LOC = P6;
 NET "o2_output[6]" LOC = P8;
 NET "o2_output[5]" LOC = P10;
 NET "o2_output[4]" LOC = P12;
-NET "o2_output[3]" LOC = P15;
 NET "o2_output[2]" LOC = P17;
 NET "o2_output[1]" LOC = P22;
 NET "o2_output[0]" LOC = P24;
+
+
+NET "o2_output[7]" LOC = P15;
+NET "engine_output[0]" LOC = P121;
+NET "engine_output[1]" LOC = P120;
+NET "engine_output[2]" LOC = P119;
+NET "engine_output[3]" LOC = P118;
+NET "engine_output[4]" LOC = P117;
+NET "engine_output[5]" LOC = P116;
+NET "engine_output[6]" LOC = P115;
+NET "engine_output[7]" LOC = P114;
+
+# PlanAhead Generated physical constraints 
+
+NET "energy_output[0]" LOC = P2;
+NET "energy_output[1]" LOC = P143;
+NET "energy_output[2]" LOC = P141;
+NET "energy_output[3]" LOC = P139;
+NET "energy_output[4]" LOC = P137;
+NET "energy_output[5]" LOC = P133;
+NET "energy_output[6]" LOC = P131;
+NET "energy_output[7]" LOC = P126;

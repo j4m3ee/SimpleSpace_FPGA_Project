@@ -48,6 +48,36 @@
 			<Port Id="1" Dir="OUT"/>
 			<Port Id="0" Dir="OUT"/>
 		</Bus>
+		<Bus Id="o2_output">
+			<Port Id="7" Dir="INOUT"/>
+			<Port Id="6" Dir="INOUT"/>
+			<Port Id="5" Dir="INOUT"/>
+			<Port Id="4" Dir="INOUT"/>
+			<Port Id="3" Dir="INOUT"/>
+			<Port Id="2" Dir="INOUT"/>
+			<Port Id="1" Dir="INOUT"/>
+			<Port Id="0" Dir="INOUT"/>
+		</Bus>
+		<Bus Id="engine_output">
+			<Port Id="7" Dir="INOUT"/>
+			<Port Id="6" Dir="INOUT"/>
+			<Port Id="5" Dir="INOUT"/>
+			<Port Id="4" Dir="INOUT"/>
+			<Port Id="3" Dir="INOUT"/>
+			<Port Id="2" Dir="INOUT"/>
+			<Port Id="1" Dir="INOUT"/>
+			<Port Id="0" Dir="INOUT"/>
+		</Bus>
+		<Bus Id="energy_output">
+			<Port Id="7" Dir="INOUT"/>
+			<Port Id="6" Dir="INOUT"/>
+			<Port Id="5" Dir="INOUT"/>
+			<Port Id="4" Dir="INOUT"/>
+			<Port Id="3" Dir="INOUT"/>
+			<Port Id="2" Dir="INOUT"/>
+			<Port Id="1" Dir="INOUT"/>
+			<Port Id="0" Dir="INOUT"/>
+		</Bus>
 		<Bus Id="common">
 			<Port Id="3" Dir="OUT"/>
 			<Port Id="2" Dir="OUT"/>
